@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="Images/peddiefarmer.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./createtask.html">Create Task</a></li>
+                        <li><a href="./goals.html">Goals</a></li>
+                    </ul>
+                    
+                    
+                </nav>
+            
+            <h1 style="text-align: center;"> Create a New Task</h1>
+            <link rel="stylesheet" href="main.css" type="text/css">
+            <style>
+                button {
+                    background-color: black; 
+                    border: none;
+                    color: whitesmoke;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    align-self: center; 
+                    background-position: 0px, 0px;
+                    margin:auto;
+                    display: flex;
+                    justify-content: center;
+                
+                  }
+            </style>
+        </header>
+        <form style="text-align: center;" action = "insert.php" method = "POST">
+            <label for="title"><b>Title</b></label>
+            <input type="text" name="title" id="title" style="background-color: #0a2341;color:white" required><br><br>
+
+            <label for="time"><b>Time</b></label>
+            <input type="number" name="time" id="time" style="background-color: #0a2341;color:white"> <br><br>
+
+            <label for="category"><b>Category</b></label>
+            <input type="text" name="category" id="category" style="background-color: #0a2341;color:white"><br><br>
+
+            <label for="class"><b>Class:</b></label>
+            <select name="class" id="class" style="background-color: #0a2341;color:white">
+                <option value="Algebra 1">Algebra 1</option>
+                <option value="MPS1">MPS1</option>
+                <option value="MPS2">MPS2</option>
+                <option value="Pre-Calculus">Pre-Calculus</option>
+            </select>
+            <br><br>
+
+            <label for="details"><i>Details</i></label> 
+            <textarea type="text" name="details" id="details" style="background-color: #0a2341;color:white" placeholder="details" Rows="2"></textarea>
+            <br><br> 
+            <input type="submit" value="Submit", style="background-color: white;color:#0a2341">
+        </form>
+    </body>
+
+    <a>
+    <button type="button"> Share Task </button>
+    </a>
+</form>
+
+</html>
