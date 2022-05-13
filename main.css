@@ -29,6 +29,10 @@
     background-color: #54e3dc;
 }
 
+.day-numbers{
+    min-height: 2em;
+}
+
 .header{
     background-color: #088a70;
     grid-area: header;
@@ -49,6 +53,19 @@
 .timeslots li{
     min-height: 60px;
 }
+
+.timeslots li::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 100%;
+    height: 1px;
+    background: #afafaf;
+    z-index: 1;
+  }  
+
+
+  
 
 ul{
     margin:0;
