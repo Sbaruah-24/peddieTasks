@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html>
-    
-
-    <button type="button" onclick="document.getElementById('date-time').innerHTML= Date();">
-       Date and Time
-    </button>
 
     <head>
         <link rel="stylesheet" href="main.css" type="text/css">
         <h1> Peddie Tasks</h1>
-    </head>
-    <body>
         <header>
-            <img class="logo" src="Images/peddiefarmer.png" alt="logo">
-            <nav>
+            <img class="logo" src="Images/farmerp2.png" alt="logo" width="80" height="80">
+            <nav class="nav_links">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./createtask.html">Create Task</a></li>
                     <li><a href="./goals.html">Goals</a></li>
                 </ul>
-                
-                
             </nav>
+            <a class="d&t" href="#">
+                <button type="button" onclick="document.getElementById('date-time').innerHTML= Date();"
+                class="cta">Date and time</button>
+            </a>
         </header>
+        <hr>
+    </head>
+    <body>
         <p id='date-time'>Current date is</p>
-        <table>
-            <thead>
-                <th scope = "col">Monday</th>
-                <th scope = "col">Tuesday</th>
-                <th scope = "col">Wednesday</th>
-                <th scope = "col">Thursday</th>
-                <th scope = "col">Friday</th>
-                <th scope = "col">Saturday</th>
-                <th scope = "col">Sunday</th>
-            </thead>
-            <tr>
-                <td>
-                    <dl> 
-                        <dt> Chest Day </dt> 
-                        <dd> time <dd> 
-                        <dd> category </dd>
-                        <dd> class </dd>
-                        <dd> details </dd>
-                    </dl>
-                </td>
-                <td></td>
-                <td></td>
-                <td>Big Math Quiz</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Chest Day</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>AAT Meeting</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="calender-container">
+            <div class="header">
+                <ul class="weekdays">
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                </ul>
+
+                <ul class="day-numbers">
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+            </div>
+
+            <div class="timeslots-container">
+                <ul class="timeslots">
+                    <li>6<sup>am</sup></li>
+                    <li>7<sup>am</sup></li>
+                    <li>8<sup>am</sup></li>
+                    <li>9<sup>am</sup></li>
+                    <li>10<sup>am</sup></li>
+                    <li>11<sup>am</sup></li>
+                    <li>12<sup>pm</sup></li>
+                    <li>1<sup>pm</sup></li>
+                    <li>2<sup>pm</sup></li>
+                    <li>3<sup>pm</sup></li>
+                    <li>4<sup>pm</sup></li>
+                    <li>5<sup>pm</sup></li>
+                    <li>6<sup>pm</sup></li>
+                    <li>7<sup>pm</sup></li>
+                    <li>8<sup>pm</sup></li>
+                    <li>9<sup>pm</sup></li>
+                    <li>10<sup>pm</sup></li>
+                    <li>11<sup>pm</sup></li>
+                </ul>
+            </div>
+
+
+
+        </div>
     </body>
 </html>
