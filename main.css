@@ -187,6 +187,10 @@ thead th {
     text-transform: uppercase;
   }
 
+  td{
+   height: 35px;
+  }
+
   input{
       background: #5accb5;
   }
