@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap');
 
 .element {
     box-sizing: border-box;
@@ -64,7 +65,9 @@
     z-index: 1;
   }  
 
-
+/* .main{
+    background-color: #9e7b28
+} */
   
 
 ul{
@@ -83,6 +86,10 @@ head{
     background-color: #54e3dc;
 }
 
+/* margin{
+    background-color: #9e7b28;
+} */
+
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -100,16 +107,22 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px, 10%;
+    /* background-color: #9e7b28; */
+    margin: 0px;
 }
 
 .logo {
     cursor: pointer;
-    order: 3;
+    order: 4;
     margin-left: auto;
 }
 
 nav{
     order: 1;
+}
+
+.title{
+    order: 3;
 }
 
 .nav_links{
@@ -152,10 +165,10 @@ h1{
     left: 10%;
     margin: 20px auto;
     position: static;
-    width: 80%;
+    width: 40%;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 65px;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
 }
 
 table {
@@ -165,10 +178,12 @@ table {
     overflow-y: scroll;
     position: static;
     width: 80%;
+    font-size: 0.9em;
+    /* border-collapse: collapse; */
 }
 
 thead th {
-    background: #0a2341;
+    background: #001d3d;
     color: #FFF;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -178,7 +193,7 @@ thead th {
   }
   
   tr {
-    background: #0a2341;
+    background: #003566;
     color: #FFF;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
