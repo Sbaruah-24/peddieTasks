@@ -4,14 +4,14 @@
     <head>
         <link rel="stylesheet" href="main.css" type="text/css">
         <header>
-            <h1> Peddie Tasks</h1>
-            <img class="logo" src="Images/farmerp2.png" alt="logo" width="100" height="100">
+            <h1> Create a New Task</h1>
+            <img class="logo" src="farmerp2.png" alt="logo" width="100" height="100">
             <nav class="nav_links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.php">Home</a></li>
                     <li><a href="./createtask.html">Create Task</a></li>
-                    <li><a href="./goals.html">Goals</a></li>
-                    <li><a href="./creategoal.html">Create Goal</a></li>
+                    <li><a href="./goals.php">Goals</a></li>
+                    <li><a href="./creategoals.html">Create Goal</a></li>
                 </ul>
             </nav>
             <a class="d&t" href="#">
@@ -22,25 +22,180 @@
         <!-- <hr> -->
     </head>
 
-    <body class="create-task">
-        <p id='date-time'></p>
-        <form style="text-align: center;" action = "insert.php" method = "POST" class="task-contents">
-            <!-- <label class="title"><b>Create New Task</b></label> -->
+    <body>
+        <form style="text-align: center;" action = "insert.php" method = "POST">
             <label for="title"><b>Title</b></label>
             <input type="text" name="title" id="title" style="background-color: #0a2341;color:white" required><br><br>
 
+            <label for="day"><b>Day</b></label>
+            <select name="day" id="day" style="background-color: #0a2341;color:white" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <br><br>
+
             <label for="time"><b>Time</b></label>
-            <input type="number" name="time" id="time" style="background-color: #0a2341;color:white"> <br><br>
+            <input type="time" name="time" id="time" style="background-color: #0a2341;color:white"> <br><br>
 
             <label for="category"><b>Category</b></label>
             <input type="text" name="category" id="category" style="background-color: #0a2341;color:white"><br><br>
 
             <label for="class"><b>Class:</b></label>
             <select name="class" id="class" style="background-color: #0a2341;color:white">
+                <option value = ""> N/A </option>
                 <option value="Algebra 1">Algebra 1</option>
                 <option value="MPS1">MPS1</option>
+                <option value="MPS1A">MPS1A</option>
+                <option value="MPS1H">MPS1H</option>
                 <option value="MPS2">MPS2</option>
+                <option value="MPS2A">MPS2A</option>
+                <option value="MPS2H">MPS2H</option>
+                <option value="College Prep Math">College Prep Math</option>
                 <option value="Pre-Calculus">Pre-Calculus</option>
+                <option value="Pre-Calculus Advanced">Pre-Calculus Advanced</option>
+                <option value="Pre-Calculus Honors">Pre-Calculus Honors</option>
+                <option value="Statistics">Statistics</option>
+                <option value="AP Statistics">AP Statistics</option>
+                <option value="Calculus">Calculus</option>
+                <option value="AP Calculus AB">AP Calculus AB</option>
+                <option value="AP Calculus BC">AP Calculus BC</option>
+                <option value="Calculus-Based Statistics">Calculus-Based Statistics</option>
+                <option value="Linear Algebra">Linear Algebra</option>
+                <option value="Multivariable Calculus">Multivariable Calculus</option>
+                <option value="Microeconomics">Microeconomics</option>
+                <option value="Macroeconomics">Macroeconomics</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Programming 1">Programming 1</option>
+                <option value="Programming 2">Programming 2</option>
+                <option value="Computer Science Advanced">Computer Science Advanced</option>
+                <option value="Algorithms & Data Structures 1">Algorithms & Data Structures 1</option>
+                <option value="Algorithms & Data Structures 2">Algorithms & Data Structures 2</option>
+                <option value="Seminar in CS 1">Seminar in CS 1</option>
+                <option value="Seminar in CS 2">Seminar in CS 2</option>
+                <option value="Research in CS 1">Research in CS 1</option>
+                <option value="Research in CS 2">Research in CS 2</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Humanities">Humanities</option>
+                <option value="English 10">English 10</option>
+                <option value="English 11">English 11</option>
+                <option value="English 12">English 12</option>
+                <option value="Creative Writing">Creative Writing</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Honors Chemistry">Honors Chemistry</option>
+                <option value="AP Chemistry">AP Chemistry</option>
+                <option value="Organic Chemistry">Organic Chemistry</option>
+                <option value="Food Chemistry">Food Chemistry</option>
+                <option value="Chemistry of Archeology">Chemistry of Archeology</option>
+                <option value="Topics in College Chemistry">Topics in College Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="Honors Biology">Honors Biology</option>
+                <option value="AP Biology">AP Biology</option>
+                <option value="Applied Biology">Applied Biology</option>
+                <option value="Physics">Physics</option>
+                <option value="AP Physics 1">AP Physics 1</option>
+                <option value="AP Physics C">AP Physics C</option>
+                <option value="Applied Physics">Applied Physics</option>
+                <option value="AP Enviromental Science">AP Enviromental Science</option>
+                <option value="Pyschology">Pyschology</option>
+                <option value="AP Pyschology">AP Pyschology</option>
+                <option value="Molecular Genetics">Molecular Genetics</option>
+                <option value="Marine Science">Marine Science</option>
+                <option value="Astronomy">Astronomy</option>
+                <option value="Honors Anatomy and Physiology">Honors Anatomy and Physiology</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Digital Fabrication">Digital Fabrication</option>
+                <option value="Engineering and Design 1 & 2">Engineering and Design 1 & 2</option>
+                <option value="Modern Global History">Modern Global History</option>
+                <option value="Race, Ethnicity and Migration">Race, Ethnicity and Migration</option>
+                <option value="AP United States History">AP United States History</option>
+                <option value="United States History">United States History</option>
+                <option value="AP US. Government and Politics">AP US. Government and Politics</option>
+                <option value="AP Art History">AP Art History</option>
+                <option value="AP European History">AP European History</option>
+                <option value="Asian Religions">Asian Religions</option>
+                <option value="International Relations">International Relations</option>
+                <option value="Empire and Commerce in the Golden Age of Piracy">Empire and Commerce in the Golden Age of Piracy</option>
+                <option value="Slave Trade and the African World">Slave Trade and the African World</option>
+                <option value="The American Legal System">The American Legal System</option>
+                <option value="Parties, Politics, and Elections">Parties, Politics, and Elections</option>
+                <option value="American Government: From Politics to Elections">American Government: From Politics to Elections</option>
+                <option value="The Vietnam War and its Aftermath">The Vietnam War and its Aftermath</option>
+                <option value="The 1980s and the Modern World">The 1980s and the Modern World</option>
+                <option value="Modern China">Modern China</option>
+                <option value="Modern India">Modern India</option>
+                <option value="Modern Middle East">Modern Middle East</option>
+                <option value="South Africa's Search for Truth and Reconciliation">South Africa's Search for Truth and Reconciliation</option>
+                <option value="World War I">World War I</option>
+                <option value="World War II">World War II</option>
+                <option value="The History and Politics of Sports">The History and Politics of Sports</option>
+                <option value="Latin 1">Latin 1</option>
+                <option value="Latin 2">Latin 2</option>
+                <option value="Latin 3">Latin 3</option>
+                <option value="Latin 4">Latin 4</option>
+                <option value="Latin 5">Latin 5</option>
+                <option value="AP Latin">AP Latin</option>
+                <option value="French 1">French 1</option>
+                <option value="French 2">French 2</option>
+                <option value="French 3">French 3</option>
+                <option value="French 4">French 4</option>
+                <option value="AP French">AP French</option>
+                <option value="Mandarin 1">Mandarin 1</option>
+                <option value="Mandarin 2">Mandarin 2</option>
+                <option value="Mandarin 3">Mandarin 3</option>
+                <option value="Mandarin 4">Mandarin 4</option>
+                <option value="Mandarin 5">Mandarin 5</option>
+                <option value="AP Mandarin">AP Mandarin</option>
+                <option value="Spanish 1">Spanish 1</option>
+                <option value="Spanish 2">Spanish 2</option>
+                <option value="Spanish 3">Spanish 3</option>
+                <option value="Spanish 3 Honors">Spanish 3 Honors</option>
+                <option value="Spanish 4">Spanish 4</option>
+                <option value="Spanish 4 Honors">Spanish 4 Honors</option>
+                <option value="Spanish 5">Spanish 5</option>
+                <option value="AP Spanish">AP Spanish</option>
+                <option value="Chorus">Chorus</option>
+                <option value="Orchestra">Orchestra</option>
+                <option value="Music Foundations">Music Foundations</option>
+                <option value="Musicanship">Musicanship</option>
+                <option value="Music and Movies">Music and Movies</option>
+                <option value="Music Performance 1">Music Performance 1</option>
+                <option value="Music Performance 2">Music Performance 2</option>
+                <option value="AP Music Theory">AP Music Theory</option>
+                <option value="Theater Foundations">Theater Foundations</option>
+                <option value="Freshman Musical">Freshman Musical</option>
+                <option value="Comedy Improv">Comedy Improv</option>
+                <option value="Musical Theater">Musical Theater</option>
+                <option value="Actors Studio">Actors Studio</option>
+                <option value="Advanced Acting">Advanced Acting</option>
+                <option value="Honors Theater">Honors Theater</option>
+                <option value="Stage Production">Stage Production</option>
+                <option value="Set Design">Set Design</option>
+                <option value="Playwriting">Playwriting</option>
+                <option value="Speech & Debate 1">Speech & Debate 1</option>
+                <option value="Speech & Debate 2">Speech & Debate 2</option>
+                <option value="Visual Arts Foundations">Visual Arts Foundations</option>
+                <option value="Drawing">Drawing</option>
+                <option value="Mixed Media Painting">Mixed Media Painting</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Film & Video">Film & Video</option>
+                <option value="Photography 1">Photography 1</option>
+                <option value="Photography 2">Photography 2</option>
+                <option value="Sculpture">Sculpture</option>
+                <option value="Furniture Making">Furniture Making</option>
+                <option value="AP Studio">AP Studio</option>
+                <option value="Advaned Architecture">Advaned Architecture</option>
+                <option value="Advanced Photography">Advanced Photography</option>
+                <option value="Mobile Video">Mobile Video</option>
+                <option value="Honors Studio Art">Honors Studio Art</option>
+
+
+
+                
             </select>
             <br><br>
 
@@ -51,9 +206,6 @@
         </form>
     </body>
 
-    <!-- <a>
-    <button type="button"> Share Task </button>
-    </a> -->
 </form>
 
 </html>
