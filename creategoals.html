@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <header>
+            <h1> Create a New Goal</h1>
+            <img class="logo" src="farmerp2.png" alt="logo" width="100" height="100">
+            <nav class="nav_links">
+                <ul>
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="./createtask.html">Create Task</a></li>
+                    <li><a href="./goals.php">Goals</a></li>
+                    <li><a href="./creategoals.html">Create Goal</a></li>
+                </ul>
+            </nav>
+            <a class="d&t" href="#">
+                <button type="button" onclick="document.getElementById('date-time').innerHTML= Date();"
+                >Date and time</button>
+            </a>
+        </header>
+        <!-- <hr> -->
+    </head>
+
+        <form style="text-align: center;" action = "insertgoal.php" method = "POST">
+            <label for="title"><b>Title</b></label>
+            <input type="text" name="title" id="title" style="background-color: #0a2341;color:white" required><br><br>
+
+            <label for="category"><b>Category</b></label>
+            <input type="text" name="category" id="category" style="background-color: #0a2341;color:white"><br><br>
+
+            <label for="details"><i>Details</i></label> 
+            <textarea type="text" name="details" id="details" style="background-color: #0a2341;color:white" placeholder="details" Rows="3"></textarea>
+            <br><br> 
+            <input type="submit" value="Submit", style="background-color: white;color:#0a2341">
+        </form>
+    </body>
+
+</form>
+
+</html>
