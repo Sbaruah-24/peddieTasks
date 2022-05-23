@@ -28,9 +28,9 @@ $result = mysqli_query($conn, $query);
                 <button type="button" onclick="document.getElementById('date-time').innerHTML= Date();"
                 class="cta">Date and time</button>
             </a>
+            
         </header>
         <hr>
-        <a href="./delete.php"><button type="button"> Delete Task </button></a>
     </head>
     <body>
         <p id='date-time'>Current date is</p>
@@ -77,7 +77,11 @@ $result = mysqli_query($conn, $query);
                         $result_Tuesday = mysqli_query($conn, $query_Tuesday); 
                         if ($result_Tuesday-> num_rows > 0) {
                             while ($row = $result_Tuesday-> fetch_assoc()) {
-                                echo "<td>" . $row["Title"] . "<br> Time: " . $row["Time"] . "<br> Category: " . $row["Category"] . "<br>       " . $row["Class"] . "<br> Details: " . $row["Details"] . "</td>";
+                                echo "<td>" . $row["Title"] . "<br> Time: " . $row["Time"] . "<br> Category: " . $row["Category"] . "<br>       " . $row["Class"] . "<br> Details: " . $row["Details"] . 
+                                    <style> 
+                                        td{background #003566}
+                                    </style>
+                                "</td>";
                             }
                         } 
                 ?> 
