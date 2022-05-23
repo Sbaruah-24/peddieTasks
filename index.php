@@ -28,9 +28,9 @@ $result = mysqli_query($conn, $query);
                 <button type="button" onclick="document.getElementById('date-time').innerHTML= Date();"
                 class="cta">Date and time</button>
             </a>
-            
         </header>
         <hr>
+        <a href="./delete.php"><button type="button"> Delete Task </button></a>
     </head>
     <body>
         <p id='date-time'>Current date is</p>
