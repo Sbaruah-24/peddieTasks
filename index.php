@@ -36,7 +36,19 @@ $result = mysqli_query($conn, $query);
         <p id='date-time'>Current date is</p>
         <table>
             <tr>
-                <td> Monday </td>
+                <td> Monday 
+                    <style> 
+                        td{background: #001d3d;
+                    color: #FFF;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;}
+                    </style>
+
+
+                </td>
                 <?php 
                         #while($rows=mysql_fetch_assoc($result)) {
                         $query_Monday = "SELECT * FROM task WHERE (Day='Monday') ORDER BY Time ASC;";
@@ -49,7 +61,17 @@ $result = mysqli_query($conn, $query);
                 ?> 
             </tr>
             <tr>
-                <td> Tuesday </td>
+                <td> Tuesday 
+                 <style> 
+                    td{background: #001d3d;
+                    color: #FFF;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;}
+                  </style>
+                </td>
                 <?php 
                         $query_Tuesday = "SELECT * FROM task WHERE (Day='Tuesday') ORDER BY Time ASC;";
                         $result_Tuesday = mysqli_query($conn, $query_Tuesday); 
@@ -61,7 +83,17 @@ $result = mysqli_query($conn, $query);
                 ?> 
             </tr>
             <tr>
-                <td> Wednesday </td>
+                <td> Wednesday
+                <style> 
+                    td{background: #001d3d;
+                    color: #FFF;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;}
+                  </style>
+                </td>
                 <?php
                         $query_Wednesday = "SELECT * FROM task WHERE Day='Wednesday' ORDER BY Time ASC;";
                         $result_Wednesday = mysqli_query($conn, $query_Wednesday); 
@@ -73,7 +105,17 @@ $result = mysqli_query($conn, $query);
                 ?> 
             </tr>
             <tr>
-                <td> Thursday </td>
+                <td> Thursday 
+                 <style> 
+                    td{background: #001d3d;
+                    color: #FFF;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;}
+                  </style>
+                </td>
                 <?php 
                         $query_Thursday = "SELECT * FROM task WHERE Day='Thursday' ORDER BY Time ASC;";
                         $result_Thursday = mysqli_query($conn, $query_Thursday); 
@@ -85,7 +127,17 @@ $result = mysqli_query($conn, $query);
                         ?> 
             </tr>
             <tr>
-                <td> Friday </td>
+                <td> Friday 
+                    <style> 
+                        td{background: #001d3d;
+                        color: #FFF;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 16px;
+                        font-weight: 100;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;}
+                     </style>
+                </td>
                 <?php 
                         $query_Friday = "SELECT * FROM task WHERE Day='Friday' ORDER BY Time ASC;";
                         $result_Friday = mysqli_query($conn, $query_Friday); 
@@ -97,7 +149,17 @@ $result = mysqli_query($conn, $query);
                         ?> 
             </tr>
             <tr>
-                <td> Saturday </td>
+                <td> Saturday 
+                    <style> 
+                        td{background: #001d3d;
+                        color: #FFF;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 16px;
+                        font-weight: 100;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;}
+                     </style>
+                </td>
                 <?php  
                         $query_Saturday = "SELECT * FROM task WHERE Day='Saturday' ORDER BY Time ASC;";
                         $result_Saturday = mysqli_query($conn, $query_Saturday); 
@@ -109,7 +171,17 @@ $result = mysqli_query($conn, $query);
                         ?> 
             </tr>
             <tr>
-                <td> Sunday </td>
+                <td> Sunday 
+                    <style> 
+                        td{background: #001d3d;
+                        color: #FFF;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 16px;
+                        font-weight: 100;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;}
+                     </style>
+                </td>
                 <?php 
                         $query_Sunday = "SELECT * FROM task WHERE Day='Sunday' ORDER BY Time ASC;";
                         $result_Sunday = mysqli_query($conn, $query_Sunday); 
