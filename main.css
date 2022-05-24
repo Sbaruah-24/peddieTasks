@@ -73,11 +73,38 @@
 
 
 .task-contents{
-   /* max-width: 700px; */
+   max-width: 700px;
    width: 100%;
+   background-color:grey;
    /* background: #fff; */
-   padding: 25px 30px;
+   padding: 25px 10px;
    border-radius: 5px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+
+}
+
+.create-goal{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.goal-contents{
+   max-width: 700px;
+   width: 100%;
+   background-color: grey;
+   /* background: #fff; */
+   padding: 25px 10px;
+   border-radius: 5px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+
 }
 
 .task-contents .title{
@@ -85,6 +112,21 @@
     font-weight: 500;
 }
 
+.complete-task{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: green;
+}
+
+.task-done{
+   background-color: red;
+   height:10;
+   width:10px;
+   cursor:pointer;
+   border-radius: 0%;
+   padding: 10px 10px;
+}
 
 /* .main{
     background-color: #9e7b28
